@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+  
+    width: 100%;
+}
+.main{
+height: 100%;
+width: 100%;
+
+}
+.bar{
+    height: 8%;
+    width: 100%;
+  
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    padding: 40px 40px;
+
+}
+.bar h3, .bar h3{
+   
+  
+    font-size: 17px;
+    background-color: black;
+    color: white;
+  padding: 10px 15px;
+     cursor: pointer;
+     border-radius: 50px;
+     margin-left: 3px;
+}
+
+.bar h3:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.intro{
+    height: 43%;
+    width: 100%;
+    background-color: bisque;
+    padding: 38px 50px ;
+     z-index: 0;
+}
+.intro h1{
+    font-size: 90px;
+letter-spacing: -3px;
+    line-height: 80px;
+ 
+}
+.place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+   padding-top: 18px;
+}
+
+.place h3, .place h4{
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.place h4{
+    font-size: 20px;
+}
+
+.heroimg {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.heroimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%; /* yahan adjust karo */
+} 
+.about{
+    height: 42%;
+    width: 100%;
+    background-color: azure;
+   
+   display: flex;
+    justify-content: space-between;
+    
+    
+
+   padding: 40px 40px;
+}
+.about h2{
+    width: 55%;
+    font-size: 40px;
+
+   text-align: left;
+     line-height: 40px;
+   
+letter-spacing: 1px;
+}
+.about2{
+width: 35%;
+
+height: 100%;
+border-left: 2px solid gray;
+padding-left: 45px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.about2 h3 {
+  
+        border-radius: 50px;
+    font-size: 30px;
+ 
+    cursor: pointer;
+   
+
+}
+.about2 h3 {
+  transition: transform 0.4s ease, color 0.4s ease;}
+
+.about2 h3:hover {
+  color: crimson;
+  transform: translateX(20px);
+}
+
+
+.icon i{
+     border-radius: 50px;
+    font-size: 30px;
+   padding: 5px 5px;
+    cursor: pointer;
+    background-color: black;
+      color: white;
+      margin-right: 10px;
+}
+
+
+.icon i:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    
+
+    box-shadow: inset 0 0 10px gray;
+   
+}
+.work{
+    height: 50%;
+    width: 100%;
+    background-color: lightgray;
+   
+   display: flex;
+ 
+border-top: 2px solid gray;
+   padding: 40px 40px;
+    border-bottom: 2px solid gray;
+}
+.work1{
+    display: flex;
+    justify-content: space-between;
+ 
+    width: 30%;
+    height: 100%;
+   padding-right: 30px;
+    border-right: 2px solid gray;
+}
+.work1 h3 ,.work1 i{
+     border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+   
+}
+
+
+.work2{
+    width: 65%;
+    height: 100%;
+    padding: 0  30px;
+  
+}
+.w{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 20px  0;
+     
+}
+.w:nth-child(1){
+   border-bottom: 2px solid gray;
+
+}
+
+
+.w .elm{
+   padding-left: 20px;
+    height: 100%;
+    width: 50%;
+
+}
+.w .elm:nth-child(1){
+
+    border-right: 2px solid gray;
+    padding: 10px;
+}
+
+
+.w .elm:nth-child(2){
+   
+    padding: 10px;
+}
+
+.w .elm h2{
+    font-size: 30px;
+  
+}
+w.elm p{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🟡 Tablet / Small Laptop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Intro Section */
+  .intro h1 {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .intro {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .about h2 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .about2 {
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 2px solid gray;
+    padding-left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about2 h3 {
+    font-size: 22px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .icon i {
+    font-size: 26px;
+    padding: 8px;
+  }
+
+  /* Work Section */
+  .work {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+  }
+
+  .work1 {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .work2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .w {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .w .elm {
+    width: 100%;
+    border-right: none !important;
+    padding: 15px 0;
+  }
+
+  .w .elm h2 {
+    font-size: 24px;
+  }
+
+  .w .elm p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* 🟠 Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Top Bar */
+  .bar {
+    padding: 20px;
+  }
+
+  .bar h3 {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  /* Intro Section */
+  .intro {
+    height: auto;
+    padding: 25px 15px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .place {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .heroimg {
+    height: 60vh;
+  }
+
+  /* About Section */
+  .about {
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .about2 {
+    gap: 10px;
+    padding-top: 15px;
+  }
+
+  .about2 h3 {
+    font-size: 20px;
+  }
+
+  .icon i {
+    font-size: 22px;
+    padding: 6px;
+  }
+
+  /* Work Section */
+  .w .elm h2 {
+    font-size: 20px;
+  }
+
+  .w .elm p {
+    font-size: 13px;
+  }
+}
+
+/* 🔵 Large Screens / 4K (min-width: 1400px) */
+@media (min-width: 1400px) {
+  .intro h1 {
+    font-size: 110px;
+    line-height: 100px;
+  }
+
+  .about h2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .w .elm h2 {
+    font-size: 35px;
+  }
+
+  .w .elm p {
+    font-size: 18px;
+  }
+}
